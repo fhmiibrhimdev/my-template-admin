@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.menu-header {
+		@apply px-3 text-xs text-gray-300 mt-8 uppercase;
+	}
+
+	.nav-link {
+		@apply px-5 text-sm text-white mt-3;
+	}
+
+	.nav-link-focus {
+		@apply hover:text-green-300 bg-white;
+	}
+
+	.has-dropdown {
+		@apply flex items-center p-2 w-full text-sm font-normal text-white rounded-lg transition duration-75 hover:bg-gray-700;
+	}
+
+	.title-sidebar {
+		@apply flex-1 ml-4 text-left whitespace-nowrap;
+	}
+
+	.nav-link-child {
+		@apply flex items-center p-2 text-sm font-normal rounded-lg text-white hover:bg-gray-700;
+	}
+
+	.nav-link-dropdown {
+		@apply flex items-center p-2 pl-9 w-full text-sm font-normal text-white rounded-lg transition duration-75 hover:bg-gray-700;
+	}
+
+	.card {
+		@apply p-2 lg:px-5 shadow-sm text-white;
+	}
+
+	.card-body {
+		@apply p-4 bg-slate-800 rounded-lg text-sm;
+	}
+
+	.section-header {
+		@apply p-4 lg:p-5 bg-slate-800 mb-4 text-base lg:text-xl font-extrabold text-white;
+	}
+}
+
+@layer utilities {
+
+	/* Chrome, Safari and Opera */
+	.no-scrollbar::-webkit-scrollbar {
+		width: 5px;
+	}
+
+	/* Track */
+	.no-scrollbar::-webkit-scrollbar-track {
+		background: #111827;
+	}
+
+	/* Handle */
+	.no-scrollbar::-webkit-scrollbar-thumb {
+		background: #1f2937;
+	}
+
+	/* Handle on hover */
+	.no-scrollbar::-webkit-scrollbar-thumb:hover {
+		background: white;
+	}
+
+	/* Hide scrollbar for Chrome, Safari and Opera */
+	.none-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+
+	/* Hide scrollbar for IE, Edge and Firefox */
+	.none-scrollbar {
+		-ms-overflow-style: none;
+		/* IE and Edge */
+		scrollbar-width: none;
+		/* Firefox */
+	}
+}

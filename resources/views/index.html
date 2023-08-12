@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="../../public/css/style.css" />
+	<link rel="stylesheet" href="../../public/fontawesome/css/all.css" />
+	<link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+	<title>Template Admin Shizue</title>
+</head>
+
+<body class="font-inter text-white bg-gray-900">
+	<div class="relative min-h-screen md:flex">
+
+		<!-- Mobile menu bar -->
+		<div class="bg-slate-900 text-gray-100 flex justify-between md:hidden drop-shadow-lg">
+			<!-- Logo -->
+			<a href="#" class="block p-4 text-white font-bold"><i class="fab fa-uikit mr-2"></i>
+				<span class="font-extrabold uppercase">SHIZUE FI</span></a>
+			<!-- Mobile menu button -->
+			<button class="mobile-menu-button p-4 focus:outline-none">
+				<i class="fas fa-bars"></i>
+			</button>
+		</div>
+		<!-- Mobile menu bar -->
+
+		<!-- Sidebar -->
+		<div
+			class="sidebar bg-slate-900 w-64 no-scrollbar overflow-y-scroll h-screen absolute inset-y-0 left-0 transform -translate-x-full transition duration-200 ease-in-out md:relative md:translate-x-0 z-50">
+			<!-- logo -->
+			<div class="px-4 pt-4 flex justify-center">
+				<a href="#">
+					<i class="fab fa-uikit mr-2"></i>
+					<span class="font-extrabold uppercase">SHIZUE FI</span>
+				</a>
+			</div>
+
+			<!-- nav -->
+			<nav>
+				<ul>
+					<li class="menu-header">Dashboard</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-dashboard"
+							data-collapse-toggle="dropdown-dashboard">
+							<i class="fas fa-fire"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Dashboard</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-dashboard" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">General Dashboard</a></li>
+							<li><a href="#" class="nav-link-dropdown">Ecommerce Dashboard</a></li>
+						</ul>
+					</li>
+
+					<li class="menu-header">Starter</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-layouts"
+							data-collapse-toggle="dropdown-layouts">
+							<i class="fas fa-columns"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Layouts</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-layouts" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Default Layout</a></li>
+							<li><a href="#" class="nav-link-dropdown">Transparent Sidebar</a></li>
+							<li><a href="#" class="nav-link-dropdown">Top Navigation</a></li>
+						</ul>
+					</li>
+					<li class="nav-link">
+						<a href="#" class="nav-link-child">
+							<i class="fas fa-square"></i>
+							<span class="ml-4">Blank Page</span>
+						</a>
+					</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-bootstrap"
+							data-collapse-toggle="dropdown-bootstrap">
+							<i class="fas fa-th"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Bootstrap</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-bootstrap" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Alert</a></li>
+							<li><a href="#" class="nav-link-dropdown">Badge</a></li>
+							<li><a href="#" class="nav-link-dropdown">Breadcumb</a></li>
+							<li><a href="#" class="nav-link-dropdown">Buttons</a></li>
+							<li><a href="#" class="nav-link-dropdown">Card</a></li>
+							<li><a href="#" class="nav-link-dropdown">Carousel</a></li>
+							<li><a href="#" class="nav-link-dropdown">Collapse</a></li>
+							<li><a href="#" class="nav-link-dropdown">Dropdown</a></li>
+							<li><a href="#" class="nav-link-dropdown">Form</a></li>
+							<li><a href="#" class="nav-link-dropdown">List Group</a></li>
+							<li><a href="#" class="nav-link-dropdown">Media Object</a></li>
+							<li><a href="#" class="nav-link-dropdown">Modal</a></li>
+							<li><a href="#" class="nav-link-dropdown">Nav</a></li>
+							<li><a href="#" class="nav-link-dropdown">Navbar</a></li>
+							<li><a href="#" class="nav-link-dropdown">Pagination</a></li>
+							<li><a href="#" class="nav-link-dropdown">Popover</a></li>
+							<li><a href="#" class="nav-link-dropdown">Progress</a></li>
+							<li><a href="#" class="nav-link-dropdown">Table</a></li>
+							<li><a href="#" class="nav-link-dropdown">Tooltip</a></li>
+							<li><a href="#" class="nav-link-dropdown">Typography</a></li>
+						</ul>
+					</li>
+
+					<li class="menu-header">Shizue</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-components"
+							data-collapse-toggle="dropdown-components">
+							<i class="fas fa-th-large"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Components</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-components" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Article</a></li>
+							<li><a href="#" class="nav-link-dropdown">Avatar</a></li>
+							<li><a href="#" class="nav-link-dropdown">Chat Box</a></li>
+							<li><a href="#" class="nav-link-dropdown">Empty State</a></li>
+							<li><a href="#" class="nav-link-dropdown">Gallery</a></li>
+							<li><a href="#" class="nav-link-dropdown">Hero</a></li>
+							<li><a href="#" class="nav-link-dropdown">Multiple Upload</a></li>
+							<li><a href="#" class="nav-link-dropdown">Pricing</a></li>
+							<li><a href="#" class="nav-link-dropdown">Static</a></li>
+							<li><a href="#" class="nav-link-dropdown">Tab</a></li>
+							<li><a href="#" class="nav-link-dropdown">Table</a></li>
+							<li><a href="#" class="nav-link-dropdown">User</a></li>
+							<li><a href="#" class="nav-link-dropdown">Wizard</a></li>
+						</ul>
+					</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-forms" data-collapse-toggle="dropdown-forms">
+							<i class="fas fa-file-alt"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Forms</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-forms" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Advanced Form</a></li>
+							<li><a href="#" class="nav-link-dropdown">Editor</a></li>
+							<li><a href="#" class="nav-link-dropdown">Validation</a></li>
+						</ul>
+					</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-google-maps"
+							data-collapse-toggle="dropdown-google-maps">
+							<i class="fas fa-map-marker-alt"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Google Maps</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-google-maps" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Advanced Route</a></li>
+							<li><a href="#" class="nav-link-dropdown">Draggable Marker</a></li>
+							<li><a href="#" class="nav-link-dropdown">Geocoding</a></li>
+							<li><a href="#" class="nav-link-dropdown">Gelocation</a></li>
+							<li><a href="#" class="nav-link-dropdown">Marker</a></li>
+							<li><a href="#" class="nav-link-dropdown">Multiple Marker</a></li>
+							<li><a href="#" class="nav-link-dropdown">Route</a></li>
+							<li><a href="#" class="nav-link-dropdown">Simple</a></li>
+						</ul>
+					</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-modules"
+							data-collapse-toggle="dropdown-modules">
+							<i class="fas fa-plug"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Modules</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-modules" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Calendar</a></li>
+							<li><a href="#" class="nav-link-dropdown">ChartJS</a></li>
+							<li><a href="#" class="nav-link-dropdown">DataTables</a></li>
+							<li><a href="#" class="nav-link-dropdown">Flag</a></li>
+							<li><a href="#" class="nav-link-dropdown">Font Awesome</a></li>
+							<li><a href="#" class="nav-link-dropdown">Ion Icons</a></li>
+							<li><a href="#" class="nav-link-dropdown">Owl Carousel</a></li>
+							<li><a href="#" class="nav-link-dropdown">Sparkline</a></li>
+							<li><a href="#" class="nav-link-dropdown">Sweet Alert</a></li>
+							<li><a href="#" class="nav-link-dropdown">Toastr</a></li>
+							<li><a href="#" class="nav-link-dropdown">Vector Map</a></li>
+							<li><a href="#" class="nav-link-dropdown">Weather Icon</a></li>
+						</ul>
+					</li>
+
+					<li class="menu-header">Pages</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-auth" data-collapse-toggle="dropdown-auth">
+							<i class="fas fa-user"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Auth</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-auth" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Forgot Password</a></li>
+							<li><a href="#" class="nav-link-dropdown">Login</a></li>
+							<li><a href="#" class="nav-link-dropdown">Register</a></li>
+							<li><a href="#" class="nav-link-dropdown">Reset Password</a></li>
+						</ul>
+					</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-erros" data-collapse-toggle="dropdown-erros">
+							<i class="fas fa-exclamation-circle"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Erros</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-erros" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">503</a></li>
+							<li><a href="#" class="nav-link-dropdown">403</a></li>
+							<li><a href="#" class="nav-link-dropdown">404</a></li>
+							<li><a href="#" class="nav-link-dropdown">500</a></li>
+						</ul>
+					</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-features"
+							data-collapse-toggle="dropdown-features">
+							<i class="fas fa-bicycle"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Features</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-features" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Activities</a></li>
+							<li><a href="#" class="nav-link-dropdown">Post Create</a></li>
+							<li><a href="#" class="nav-link-dropdown">Posts</a></li>
+							<li><a href="#" class="nav-link-dropdown">Profile</a></li>
+							<li><a href="#" class="nav-link-dropdown">Settings</a></li>
+							<li><a href="#" class="nav-link-dropdown">Setting Detail</a></li>
+							<li><a href="#" class="nav-link-dropdown">Tickets</a></li>
+						</ul>
+					</li>
+					<li class="nav-link">
+						<a class="has-dropdown" aria-controls="dropdown-utilities"
+							data-collapse-toggle="dropdown-utilities">
+							<i class="fas fa-ellipsis-h"></i>
+							<span class="title-sidebar" sidebar-toggle-item>Utilities</span>
+							<i class="fas fa-angle-down"></i>
+						</a>
+						<ul id="dropdown-utilities" class="hidden py-2 space-y-2">
+							<li><a href="#" class="nav-link-dropdown">Contact</a></li>
+							<li><a href="#" class="nav-link-dropdown">Invoice</a></li>
+							<li><a href="#" class="nav-link-dropdown">Subscribe</a></li>
+						</ul>
+					</li>
+
+				</ul>
+				<div class="my-12">
+					<a href="#"
+						class="px-8 py-3 bg-transparent rounded-md text-sm mx-4 border-solid border-2 border-gray-800"><i
+							class="fas fa-rocket mr-5"></i>Documentasion</a>
+				</div>
+			</nav>
+		</div>
+
+		<!-- Content -->
+		<div class="flex-1 h-screen overflow-y-scroll">
+			<div class="bg-slate-900 lg:p-6 hidden lg:block drop-shadow-lg">
+				<div class="flex justify-between">
+					<button>
+						<i class="fas fa-bars"></i>
+					</button>
+					<button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar"
+						class="flex items-center justify-between w-full py-2 pl-3 pr-4 font-medium text-white border-b border-gray-100 hover:bg-transparent lg:border-0 lg:hover:text-cyan-200 lg:p-0 lg:w-auto text-sm">
+						<img src="../../public/img/avatar-1.png" class="rounded-full mr-2" width="30px">
+						Hi, Fahmi Ibrahim
+						<i class="fas fa-angle-down ml-1"></i>
+					</button>
+					<div id="dropdownNavbar"
+						class="z-10 hidden bg-slate-900 divide-y divide-gray-800 rounded shadow w-44">
+						<div class="py-1">
+							<a href="#" class="block px-6 py-2 text-xs text-blue-300 hover:bg-gray-800 font-bold">LOGGED
+								IN
+								5 MIN AGO</a>
+						</div>
+						<ul class="py-1 text-sm text-gray-700" aria-labelledby="dropdownLargeButton">
+							<li>
+								<a href="#" class="block px-6 py-2 text-white hover:bg-gray-800">
+									<i class="fas fa-user mr-2"></i>
+									Profile
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block px-6 py-2 text-white hover:bg-gray-800">
+									<i class="fas fa-bolt mr-2"></i>
+									Activities
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block px-6 py-2 text-white hover:bg-gray-800">
+									<i class="fas fa-cog mr-2"></i>
+									Settings
+								</a>
+							</li>
+						</ul>
+						<div class="py-1">
+							<a href="#" class="block px-6 py-2 text-red-600 text-sm hover:bg-gray-800">
+								<i class="fas fa-sign-out mr-2"></i>
+								Log out
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="main-section">
+				<section class="section">
+					<div class="section-header">
+						Dashboard
+					</div>
+				</section>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					Rp150.000.000,00
+				</div>
+			</div>
+
+			<div class="card">
+				<div class="card-body">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium laudantium quaerat minima dicta
+					quisquam minus tempora itaque quia facere culpa modi, aperiam doloremque corporis dolor.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+	<script src="../../public/js/shizue.js"></script>
+</body>
+
+</html>
